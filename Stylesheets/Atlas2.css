@@ -1,0 +1,192 @@
+/*
+Licensed under the GPL V3 License
+Created 2014 - Thursday 21 - August
+*/
+
+
+/*  Add box sizing to all elements
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/*  Content Selector
+*/
+
+.atlas {
+    margin: 0 auto;
+    width: 95%;
+}
+
+/*  Selectors
+*/
+
+div[class*='frame-'] {
+    float: left;
+    padding: 10px;
+}
+
+div[class*='frame-']:last-of-type {
+    float: right;
+}
+
+.spacer { margin-bottom: 40px;}
+
+
+/*
+==========================*/
+
+
+
+/*  Frame Selectors
+*/
+
+.frame-1  { width: 100%; }
+.frame-2  { width: 50%; }
+.frame-3  { width: 33.33%; }
+.frame-4  { width: 25%; }
+.frame-5  { width: 20%; }
+.frame-6  { width: 16.6666666667%; }
+.frame-7  { width: 14.2857142857%; }
+.frame-8  { width: 12.5%; }
+.frame-9  { width: 11.1111111111%; }
+.frame-10 { width: 10%; }
+.frame-11 { width: 9.09090909091%; }
+.frame-12 { width: 8.33%; }
+
+
+/*
+==========================*/
+
+
+
+/*  Clearfix
+*/
+
+.atlas::after {
+  display: table;
+  clear: both;      
+  }
+
+.clear::after { clear: both; }
+
+
+/*
+==========================*/
+
+
+
+/*  Media Queries
+*/
+
+/*  Mobile landscape & down
+*/
+@media (max-width: 30em) {
+.frame-1,
+.frame-2,
+.frame-3,
+.frame-4,
+.frame-5,
+.frame-6,
+.frame-7,
+.frame-8,
+.frame-9,
+.frame-10,
+.frame-11,
+.frame-12 {
+    width: 100%;
+}
+    }
+
+/*  Tablet portrait to landscape
+*/
+@media (min-width: 30em) and (max-width: 50em) {
+.frame-4,
+.frame-6,
+.frame-8,
+.frame-10,
+.frame-12 {
+    width: 50%;
+}
+
+.frame-1,
+.frame-2,
+.frame-3,
+.frame-5,
+.frame-7,
+.frame-9,
+.frame-11 {
+    width: 100%;
+}
+  }
+
+/*  Small desktop to landscape
+*/
+  @media (min-width: 50em) and (max-width: 68.750em) {
+.frame-2,
+.frame-7 {
+    width: 100%
+}
+
+.frame-4,
+.frame-8,
+.frame-10,
+.frame-12 {
+    width: 100%;
+}
+  }
+
+
+/*
+==========================*/
+
+
+
+/* Hide Content
+*/
+
+.hide { display: none; }
+
+@media (max-width: 30em) {
+.hide-mobile { display: none; }
+}
+
+@media (min-width: 30em) and (max-width: 50em) {
+.hide-tablet { display: none; }
+}
+
+
+/*
+==========================*/
+
+
+
+/*  Typography
+*/
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 1.0rem;
+    font-weight: normal;
+    font-family: 'Helvetica';
+    color: #3D3D3D;
+}
+
+/*
+==========================*/
+
+
+
+/*  Image Grid
+*/
+
+
+/*  Article
+*/
