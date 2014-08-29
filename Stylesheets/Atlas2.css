@@ -32,13 +32,14 @@ Created 2014 - Thursday 21 - August
 div[class*='frame-'] {
     float: left;
     padding: 10px;
+    line-height: 20px;
 }
 
-div[class*='frame-']:last-of-type {
+div[class*='frame-']::last-of-type {
     float: right;
 }
 
-.spacer { margin-bottom: 40px;}
+.spacer { margin-bottom: 25px;}
 
 
 /*
@@ -101,9 +102,7 @@ div[class*='frame-']:last-of-type {
 .frame-9,
 .frame-10,
 .frame-11,
-.frame-12 {
-    width: 100%;
-}
+.frame-12 { width: 100%; }
     }
 
 /*  Tablet portrait to landscape
@@ -113,9 +112,7 @@ div[class*='frame-']:last-of-type {
 .frame-6,
 .frame-8,
 .frame-10,
-.frame-12 {
-    width: 50%;
-}
+.frame-12 { width: 50%; }
 
 .frame-1,
 .frame-2,
@@ -123,26 +120,20 @@ div[class*='frame-']:last-of-type {
 .frame-5,
 .frame-7,
 .frame-9,
-.frame-11 {
-    width: 100%;
-}
-  }
+.frame-11 { width: 100%; }
+    }
 
 /*  Small desktop to landscape
 */
   @media (min-width: 50em) and (max-width: 68.750em) {
-.frame-2,
-.frame-7 {
-    width: 100%
-}
+  .frame-2,
+  .frame-7 { width: 100% }
 
-.frame-4,
-.frame-8,
-.frame-10,
-.frame-12 {
-    width: 100%;
-}
-  }
+  .frame-4,
+  .frame-8,
+  .frame-10,
+  .frame-12 { width: 100%; }
+    }
 
 
 /*
@@ -156,11 +147,11 @@ div[class*='frame-']:last-of-type {
 .hide { display: none; }
 
 @media (max-width: 30em) {
-.hide-mobile { display: none; }
+  .hide-mobile { display: none; }
 }
 
 @media (min-width: 30em) and (max-width: 50em) {
-.hide-tablet { display: none; }
+  .hide-tablet { display: none; }
 }
 
 
@@ -172,12 +163,36 @@ div[class*='frame-']:last-of-type {
 /*  Typography
 */
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 1.0rem;
     font-weight: normal;
-    font-family: 'Helvetica';
+    font-family: sans-serif;
+    color: #2D2D2D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6[class=*'small'] {
+    font-size: 0.833em;
+    color: #5D5D5D;
+}
+
+p {
+    font-weight: normal;
     color: #3D3D3D;
 }
+
+p[class=*'bold'] { font-weight: bold, 700; }
+b { font-weight: bold, 700; }
+
 
 /*
 ==========================*/
@@ -187,6 +202,28 @@ h1,h2,h3,h4,h5,h6 {
 /*  Image Grid
 */
 
+img[class=*'center' {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
 
 /*  Article
 */
+
+article {
+    margin: 0 auto;
+    line-height: 20px;
+    padding: 40px;
+    letter-spacing: 0.03em;
+    word-wrap: break-word;
+}
+
+article p { color: #2D2D2D; font-family: 'serif'; }
+article[class=*'bold'] { font-weight: bold, 600; }
+article b { font-weight: bold, 600;}
