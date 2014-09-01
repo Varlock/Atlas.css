@@ -192,6 +192,9 @@ p {
 
 p[class=*'bold'] { font-weight: bold, 700; }
 b { font-weight: bold, 700; }
+p[class=*'em'] { font-style: italic; font-weight: normal; }
+em { font-style: italic; font-weight: normal; }
+
 
 
 /*
@@ -210,9 +213,6 @@ img[class=*'center' {
 
 
 
-
-
-
 /*  Article
 */
 
@@ -224,6 +224,10 @@ article {
     word-wrap: break-word;
 }
 
-article p { color: #2D2D2D; font-family: 'serif'; }
+article p {
+    color: #2D2D2D;
+    font-family: 'serif';
+}
+
 article[class=*'bold'] { font-weight: bold, 600; }
 article b { font-weight: bold, 600;}
