@@ -202,17 +202,6 @@ em { font-style: italic; font-weight: normal; }
 
 
 
-/*  Image Grid
-*/
-
-img[class=*'center' {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
 /*  Article
 */
 
@@ -223,11 +212,3 @@ article {
     letter-spacing: 0.03em;
     word-wrap: break-word;
 }
-
-article p {
-    color: #2D2D2D;
-    font-family: 'serif';
-}
-
-article[class=*'bold'] { font-weight: bold, 600; }
-article b { font-weight: bold, 600;}
