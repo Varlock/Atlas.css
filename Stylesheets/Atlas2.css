@@ -30,7 +30,7 @@ Created 2014 - Thursday 21 - August
 
 div[class*='frame-'] {
     float: left;
-    padding: 10px;
+    padding: 0.8em;
     line-height: 20px;
 }
 
